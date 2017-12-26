@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bulletaction : MonoBehaviour {
-
+	
 
 	void Start () {
-		Shoot (new Vector3 (0, 0, -200));
+		
 	}
 	
 
@@ -18,11 +18,11 @@ public class Bulletaction : MonoBehaviour {
 		if (collision.gameObject.tag == "Bullet") {
 			Destroy (this.gameObject);
 		}
+
+		if (collision.gameObject.tag == "Player") {
+			Destroy (gameObject);
 	
+		}
+
 	}
-		
-	void Shoot (Vector3 dir) {
-		GetComponent<Rigidbody> ().AddForce (dir);
-	}
-		
 }

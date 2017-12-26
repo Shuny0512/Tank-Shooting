@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54570202451823252}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +53,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -123,6 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee431e729d8a4947b6a621b6c6116be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerpos: {fileID: 4929503661946020}
   BulletPrefab: {fileID: 1395832211979142, guid: d4db64f8605d94eb1ba73e2bb7df635b,
     type: 2}
