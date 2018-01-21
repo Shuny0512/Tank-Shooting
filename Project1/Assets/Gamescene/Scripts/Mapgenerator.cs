@@ -37,8 +37,7 @@ public class Mapgenerator : MonoBehaviour {
 		GameObject enemy2 = Instantiate (EnemyPrefab) as GameObject;
 		enemy2.transform.position = new Vector3 (1, 1, 2);
 
-		GameObject enemy3 = Instantiate (EnemyPrefab) as GameObject;
-		enemy3.transform.position = new Vector3 (7, 1, 2);
+
 
 	}
 
