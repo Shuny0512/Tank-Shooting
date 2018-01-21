@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Bulletaction : MonoBehaviour {
 	
-
+	float bullettime = 0.8f;
+	float time;
 	void Start () {
-		
+		time = 0;
 	}
 	
 
 	void Update () {
-		
+		time += Time.deltaTime;
+
+		if (time > bullettime) {
+			Destroy (this.gameObject);
+		}
 	}
 
 	void OnCollisionEnter (Collision collision) {
@@ -19,9 +24,8 @@ public class Bulletaction : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 
-		if (collision.gameObject.tag == "Player") {
-			Destroy (gameObject);
-	
+		if (collision.gameObject.tag == "Wall") {
+			Destroy (this.gameObject);
 		}
 
 	}
